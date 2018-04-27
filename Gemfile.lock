@@ -4,12 +4,14 @@ GEM
     rack (2.0.5)
     roda (3.7.0)
       rack
+    sequel (5.7.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   roda (~> 3.7.0)
+  sequel (~> 5.7.0)
 
 BUNDLED WITH
    1.16.0
