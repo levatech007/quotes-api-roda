@@ -1,9 +1,10 @@
 require "roda"
 
 class Quotes < Roda
+  plugin :json
   route do |r|
     r.root do
-      "Hello World!"
+      {'a'=>'b'}
     end
   end
 end

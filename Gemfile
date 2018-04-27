@@ -2,4 +2,4 @@
 
 source "https://rubygems.org"
 
-gem "roda", "~> 2.1.0"
+gem "roda", "~> 3.7.0"
