@@ -7,7 +7,13 @@ class Quotes < Roda
   plugin :json
   route do |r|
     r.root do
-      {'a'=>'b'}
+      {'Hello'=>'world'}
     end
-  end
+
+  r.on "quotes" do
+      r.get do
+        {'Hello'=>'world...again'}
+      end
+    end
+  end #end routes
 end
