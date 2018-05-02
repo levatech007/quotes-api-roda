@@ -1,7 +1,8 @@
 require "roda"
 require "sequel"
 
-DB = Sequel.connect(adapter: :postgres, database: 'quotes_app', host: 'localhost', user: 'galen')
+user = ENV['USER']
+DB = Sequel.connect(adapter: :postgres, database: 'quotes_app', host: 'localhost', user: user)
 
 class Quotes < Roda
   plugin :json
